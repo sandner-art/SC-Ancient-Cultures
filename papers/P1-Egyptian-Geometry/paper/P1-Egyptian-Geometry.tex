@@ -60,45 +60,11 @@ History of mathematics credit ancient Egypt with a practical, arithmetic-based g
 
 The genius of the Egyptian system, and the engine of its millennia-long success, lies in its unification of the abstract and the practical. It achieved this by encoding a fundamental mathematical relationship directly into its primary, state-sanctioned unit of measure. The royal cubit was defined not by the simple happenstance of human anatomy—even if it was cleverly promoted and disseminated as such—but as the physical instantiation of a \textbf{fundamental harmonic division of the circle}, a concept we now denote with the symbol $\pi/6$. This value, representing a primary geometric relationship long before the constant was formally symbolized as '$\pi$', reveals its deep connection to spherical reality through its uncanny precision in modern, geodetically-derived meters. This single, deliberate choice is the 'proto-axiom' from which the entire paradigm unfolds. From it, a complete duodecimal system of angular measurement (30°, 60°, 90°, 360°) emerges as a natural consequence. The divisions of our time and the degrees of our circles are not arbitrary cultural artifacts but the logical, practical outflows of a unified geometry grounded in one brilliantly chosen constant.
 
-\begin{figure}[htbp]
+\begin{figure}[h!]
 \centering
-\begin{tikzpicture}[
-    font=\small,
-    node distance=0.5cm,
-    arrow/.style={-Latex, thick},
-    valuebox/.style={
-        draw=blue!70!black, 
-        fill=blue!10, 
-        rounded corners, 
-        align=center, 
-        inner sep=4pt
-    }
-]
-    % --- Draw the Royal Cubit Rod ---
-    \draw[fill=yellow!30!white, draw=black, very thick] (0,0) rectangle (10, 0.8);
-    \foreach \i in {1,...,6} {
-        \draw[thick] (10*\i/7, 0) -- (10*\i/7, 0.8); % Palms
-    }
-    \foreach \i in {1,...,27} {
-        \draw (10*\i/28, 0) -- (10*\i/28, 0.4); % Fingers/Digits
-    }
-    \node[above=0.1cm of {(5, 1.7)}, font=\bfseries] {Egyptian Royal Cubit (\textit{meh niswt})};
-    \draw[<->, thick] (0,-0.2) -- (10,-0.2) node[midway, below] {Length $\approx \SI{52.36}{\centi\meter}$};
-
-    % --- Mathematical Value Nodes ---
-    \node[valuebox] (p6) at (5, 3.5) {Circular Geometry \\ $\frac{\pi}{6} \approx 0.523598\dots$};
-    \node[valuebox] (phi2) at (0.5, 3) {Golden Ratio Relation \\ $\frac{\phi^2}{5} \approx 0.523606\dots$};
-    \node[valuebox] (pidiff) at (9.5, 3) {Transcendental Difference \\ $\pi - \phi^2 \approx 0.523558\dots$};
-
-    % --- Arrows connecting values to the concept ---
-    \coordinate (target) at (5,1.2); % A point just above the cubit rod
-    \draw[arrow, blue!60, thick] (p6.south) -- (target);
-    \draw[arrow, blue!60, thick] (phi2.south) .. controls +(0,-0.5) and +(-1,-0.5) .. (target);
-    \draw[arrow, blue!60, thick] (pidiff.south) .. controls +(0,-0.5) and +(1,-0.5) .. (target);
-
-\end{tikzpicture}
-\caption{The Royal Cubit as a fundamental mathematical constant. Its archaeologically verified length of approximately $\SI{52.36}{\centi\meter}$ represents the convergence of three independent mathematical expressions: the primary circular division ($\pi/6$), a golden ratio formulation ($\phi^2/5$), and a transcendental difference ($\pi-\phi^2$). This convergence strongly suggests deliberate mathematical design rather than anthropometric chance.}
-\label{fig:cubit_convergence}
+\includegraphics[width=0.7\textwidth]{figures/pentagram-fig.jpeg}
+\caption{Geometric Quantization of the Pentagram within the $\pi/6$ System. A pentagram inscribed in a circle with a radius equal to one royal cubit ($R = \pi/6$). The system quantizes the universal properties of the golden ratio ($\phi$). The length of the pentagram's side ($d$) is exactly $\phi$ times the side length of its enclosing pentagon ($s$). The vertex angles of $36^\circ$ are simple rational multiples of the system's $30^\circ$ base unit, demonstrating the framework's ability to elegantly integrate 5-fold symmetry.}
+\label{fig:pentagram_quantization}
 \end{figure}
 
 The royal cubit length of $\pi/6$ meters (0.5236 m) represents conscious mathematical design rather than anthropometric coincidence. While three independent mathematical expressions ($\pi/6$, $\phi^2/5$, and $\pi - \phi^2$) converge to this value within measurement tolerances, the deeper significance lies in the geometric framework this foundation enables. The convergence of these three distinct mathematical expressions to a single value is not a coincidence; it suggests this value is a fundamental geometric constant, one that the Egyptians discovered through practical application and which modern science, using the geodetically-derived meter, has independently verified. The $\pi/6$ system creates optimal relationships for both pentagon (golden ratio $\phi$) and hexagon ($\sqrt{3}$) geometries, while establishing natural modularity for architectural and astronomical applications.
@@ -108,7 +74,7 @@ The royal cubit length of $\pi/6$ meters (0.5236 m) represents conscious mathema
 In this paper, 'proto-non-Euclidean' or 'proto-spherical' geometry does not refer to a formal axiomatic system in the modern sense. Rather, it describes a mathematical philosophy that, unlike later planar-focused Greek geometry, chose the sphere as the foundational object, with the circle as its essential projection and symbolic representation. It is a system built on intrinsic curvature, where volumetric and linear units are unified through the circumference-to-volume relationship of a sphere ($V = c^3/6\pi^2$). It is 'proto-non-Euclidean' in its approach and foundational premise, not its formal methodology.
 \end{quote}
 
-This spherical foundation is most evident in the volume relationship—where a sphere with circumference of one royal cubit contains exactly half a hekat. This correspondence demonstrates a practical understanding of intrinsic curved-space mathematics, an idea central to modern non-Euclidean geometry.
+This spherical foundation is most evident in the volume relationship—where a sphere with circumference of one royal cubit contains exactly half a \textit{hekat} \ref{tbl:volume_standards}. This correspondence demonstrates a practical understanding of intrinsic curved-space mathematics, an idea central to modern non-Euclidean geometry.
 
 The implications extend far beyond historical interest. The Egyptian system suggests alternative pathways to advanced mathematical understanding through practical applications rather than abstract axiomatization. Furthermore, the framework's cultural transmission and persistence into modern systems indicates practical advantages that sustained adoption across millennia of cultural change.
 
@@ -116,7 +82,11 @@ The implications extend far beyond historical interest. The Egyptian system sugg
 
 The precise origin of the royal cubit is central to understanding Egyptian mathematics. Many scholars point to anthropometric sources, such as the length of the Pharaoh's forearm from elbow to fingertip, and its stability as a result of cultural tradition \cite{stone2014cubit, imhausen2016mathematics}. Such theories seem plausible on the surface, as cubit was divided into 7 palms of 4 fingers each, totaling 28 digits with precise fractional subdivisions — so a connection to practical anatomy is embedded into its design. However, these explanations struggle to account for the mathematical coherence and predictive power embedded within the system. We argue that the cubit's length was not an accident of anatomy or symbolics but a deliberate, sophisticated, and informed choice of a mathematically optimal value. A critical review of the metrological evidence reveals that the observed variation in surviving artifacts, often cited to discredit a precise mathematical origin, in fact strengthens the case for a $\pi/6$ foundation.
 
-The archaeological range for surviving cubit rods is typically cited as \SIrange{52.3}{52.9}{\centi\meter} \cite{lepsius1865altagyptische}. Far from contradicting the theoretical value of $\pi/6$ meters ($\approx\SI{52.36}{\centi\meter}$), this range contains stunning confirmations. The ceremonial cubit of Maya, a high official under Tutankhamun, measures \SI{52.35}{\centi\meter}, agreeing with the $\pi/6$ theory to within \SI{0.1}{\milli\meter} \cite{imhausen2016mathematics}. Furthermore, the most reliable measure of the ideal standard is not any single, potentially warped wooden artifact, but the aggregated result of monumental construction. Modern surveys of the Great Pyramid's base yield a mean cubit value of \SI{0.5236}{\meter}, a near-perfect match \cite{dash2015survey}.
+
+
+\subsection{Variations in Royal Cubit Lengths}
+
+The archaeological range for surviving royal cubit rods is typically cited as \SIrange{52.3}{52.9}{\centi\meter} \cite{lepsius1865altagyptische}. Far from contradicting the theoretical value of $\pi/6$ meters ($\approx\SI{52.36}{\centi\meter}$), this range contains stunning confirmations. The ceremonial cubit of Maya, a high official under Tutankhamun, measures \SI{52.35}{\centi\meter}, agreeing with the $\pi/6$ theory to within \SI{0.1}{\milli\meter} \cite{imhausen2016mathematics}. Furthermore, the most reliable measure of the ideal standard is not any single, potentially warped wooden artifact, but the aggregated result of monumental construction. Modern surveys of the Great Pyramid's base yield a mean cubit value of \SI{0.5236}{\meter}, a near-perfect match \cite{dash2015survey}.
 
 Most compellingly, the observed variation in cubit lengths is predicted by the theory itself when combined with known Egyptian mathematical practices. If a scribe used the known approximation for pi from the Rhind Papyrus ($\pi \approx 256/81$) to calculate the length of a $\pi/6$ cubit, the result would be \SI{52.67}{\centi\meter}---a value falling squarely in the middle of the archaeological range. The slight variations in cubit rods, therefore, do not disprove the $\pi/6$ standard. Rather, they appear to be the predictable result of calculating a sophisticated theoretical value using the practical arithmetic of the day.
 
@@ -132,6 +102,13 @@ The $\pi/6$ foundation creates mathematical elegance through systematic angular 
 
 The system extends into harmonic analysis and complex mathematics. The expression $e^{i\pi/6}$ generates 6th roots of unity, creating natural hexagonal symmetry in complex plane representations. Fourier series based on $\pi/6$ periodicity establish natural harmonic frequencies: $f(x) = \sum[a_n\cos(n\pi x/6) + b_n\sin(n\pi x/6)]$, with fundamental frequency $\omega = 12$ rad/s providing mathematical foundation for musical and temporal systems.
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/radian-fig.jpeg}
+\caption{The Geometric Origin of the Duodecimal System. This figure illustrates the $\pi/6$ paradigm's foundational principle. When a circle is drawn with a radius of exactly 1 meter, the royal cubit ($\pi/6$ meters) functions as a unit of arc length that divides the circumference into exactly 12 segments. This construction demonstrates that the royal cubit acts as a physical instantiation of its own radian measure ($\text{angle} = \frac{\text{arc length}}{\text{radius}} = \frac{(\pi/6)}{1} = \pi/6\,\text{radians}$), which is precisely $30^\circ$. This establishes a direct, non-arbitrary link between the linear cubit and the $30^\circ$ angular unit that underpins the entire system, providing a geometric basis for the duodecimal frameworks of the ancient world.}
+\label{fig:radian_origin}
+\end{figure}
+
 \subsection{The Royal Cubit as a Radian Measure: The 12-Part Division of the Circle}
 
 The geometric origin of the $\pi/6$ system's duodecimal (base-12) nature can be found in a simple, elegant construction that unifies the meter, the circle, and the cubit. Consider a circle with a radius of exactly \textbf{1 meter}.
@@ -142,7 +119,7 @@ The geometric origin of the $\pi/6$ system's duodecimal (base-12) nature can be 
     \frac{\text{Circumference}}{\text{Arc Length}} = \frac{2\pi\,\text{meters}}{\pi/6\,\text{meters}} = 12
     \]
 \end{itemize}
-This is not an approximation. This construction demonstrates that \textbf{exactly 12 royal cubit arcs fit along the circumference of a 2-meter diameter circle.} This provides a direct, physical, and geometric origin for the duodecimal system.
+This is not an approximation. This construction demonstrates that \textbf{exactly 12 royal cubit arcs fit along the circumference of a 2-meter diameter circle.} This provides a direct, physical, and geometric origin for the duodecimal system \ref{fig:radian_origin}.
 
 This construction also reveals the royal cubit's identity as a \textit{de facto} \textbf{radian measure}. The radian, the SI unit of angle, is defined as $\text{angle} = \text{arc length} / \text{radius}$. For this construction, the angle subtended by one royal cubit is:
 \[
@@ -153,7 +130,12 @@ One $\pi/6$ radian is exactly \textbf{$30^\circ$}. Therefore, the royal cubit is
 
 \subsection{Pentagon and Hexagon Geometric Optimization}
 
-
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.99\textwidth]{figures/pentagon-fig.jpeg}
+\caption{Comparative Analysis of Pentagon and Hexagon Geometry with a Royal Cubit Radius. Both polygons are inscribed in a circle with radius $R = \pi/6$. (Left) The pentagon's geometry is elegantly quantized, with its diagonal-to-side ratio defined by the golden ratio, $\phi$. (Right) The hexagon demonstrates perfect integration with the $\pi/6$ system. Its side length is exactly equal to the radius ($s_{\text{hex}} = R = \pi/6$), and its interior angle is a perfect integer multiple of the system's angular unit ($120^\circ = 4 \times 30^\circ$). The figure illustrates the $\pi/6$ framework's capacity to unify both 5-fold ($\phi$-based) and 6-fold ($\pi$-based) symmetries.}
+\label{fig:penta_hexa_comparison}
+\end{figure}
 
 \textbf{The $\pi/6$ foundation creates optimal quantization of pentagon and hexagon relationships, unifying seemingly disparate geometric systems.} While pentagon diagonal-to-side ratios ($\phi$, the golden ratio) represent universal mathematical properties, the $\pi/6$ cubit transforms these relationships into elegantly quantized numerical expressions suitable for practical construction and calculation.
 
@@ -375,32 +357,56 @@ Engineering applications reveal sophisticated geometric understanding extending 
 
 Construction modularity achieved through cubit-based systems enabled efficient planning and material calculation. Standard mudbrick dimensions based on cubit subdivisions created naturally modular construction systems, while architectural planning employed systematic proportional relationships derived from $\pi/6$ geometric principles. This integration of mathematical theory with practical construction demonstrates the framework's comprehensive applicability.
 
-\textbf{Administrative documentation provides contemporary evidence for systematic mathematical application.} The Wadi al-Jarf papyri document Great Pyramid construction using cubit measurements for logistical planning, material transport, and workforce management. These records from 2560-2550 BCE demonstrate practical application of the $\pi/6$ framework in complex engineering projects requiring precise mathematical coordination.
+Administrative documentation provides \textbf{contemporary evidence for systematic mathematical application.} The Wadi al-Jarf papyri document Great Pyramid construction using cubit measurements for logistical planning, material transport, and workforce management. These records from 2560-2550 BCE demonstrate practical application of the $\pi/6$ framework in complex engineering projects requiring precise mathematical coordination.
 
 \section{Harmonic Resonance and the Physical World}
 \label{sec:harmonics}
 
-The prevalence and longevity of the $\pi/6$ framework suggest an advantage that transcends mere mathematical convenience. The evidence points toward a system that is fundamentally aligned with the physics of harmony and resonance, creating structures and systems that were not only practical but physically stable and acoustically pleasing.
+The prevalence and longevity of the $\pi/6$ framework suggest an advantage that transcends mere mathematical convenience. The evidence points toward a system that is fundamentally aligned with the physics of harmony and resonance, creating structures and systems that were not only practical but physically stable and acoustically pleasing—a direct expression of the Egyptian concept of \textit{Ma'at}, or cosmic order and truth.
 
 \subsection{Musical Harmonics and the 12-Tone System}
 
-To understand the potential of a duodecimal system in Egypt, we must look to its closest well-documented ancient parallel: the Pythagorean music theory of Greece. The Greek system was built not on dividing the octave into 12 equal logarithmic steps (a modern invention known as equal temperament), but by stacking pure mathematical ratios, primarily the perfect fifth ($3:2$). When twelve such fifths are stacked, they nearly complete seven octaves, creating a 12-pitch system that is highly consonant but contains a small mathematical discrepancy known as the ``Pythagorean comma'' \cite{heath1921history}. A $\pi/6$-based duodecimal system would have been perfectly suited for this kind of ratio-based exploration, providing a framework to organize 12 pitches built from the fundamental harmonic divisions of 2 and 3. While direct proof from Pharaonic Egypt is missing, later Greco-Roman authors, who studied Egyptian culture extensively, provide circumstantial evidence. Plato, in his \textit{Laws}, praises Egyptian music for its ancient, codified nature, claiming it was based on \textbf{eternally correct, mathematically-determined forms} that were forbidden to be altered \cite[pp.~656-657]{plato_laws}. Diodorus Siculus states that music was a required, sacred subject for the sons of Egyptian priests \cite[section~1.81]{diodorus_siculus_library}. This strongly suggests that the Greeks, the inheritors of Egyptian knowledge, believed Egypt possessed precisely what this paper proposes: a musical system that was not arbitrary, but ancient, systematic, and deeply integrated with mathematics and cosmic order.
+To understand the potential of a duodecimal system in Egypt, we must look to its closest well-documented ancient parallel: the Pythagorean music theory of Greece. The Greek system was built not on dividing the octave into 12 equal logarithmic steps (a modern invention known as equal temperament), but by stacking pure mathematical ratios, primarily the perfect fifth ($3:2$). When twelve such fifths are stacked, they nearly complete seven octaves, creating a 12-pitch system that is highly consonant but contains a small mathematical discrepancy known as the ``Pythagorean comma'' \cite{heath1921history}. A $\pi/6$-based duodecimal system would have been perfectly suited for this kind of ratio-based exploration, providing a framework to organize 12 pitches built from the fundamental harmonic divisions of 2 and 3.
 
-The duodecimal nature of the $\pi/6$ system finds its most direct parallel in the structure of music. The 12-tone chromatic scale, the foundation of most Western and Near Eastern music, is a logarithmic division of the octave. The most fundamental and consonant harmonic intervals---the octave (a $2:1$ frequency ratio) and the perfect fifth (a $3:2$ frequency ratio)---are found in the simplest divisions of a vibrating string or air column. In the $\pi/6$ system, these correspond to the most basic geometric divisions of the circle by 2 ($180^\circ$) and 3 ($120^\circ$), both clean multiples of the $30^\circ$ base unit. The system's base-12 structure is thus inherently compatible with the mathematical principles of musical consonance.
+While direct proof from Pharaonic Egypt is missing, later Greco-Roman authors, who studied Egyptian culture extensively, provide circumstantial evidence. Plato, in his \textit{Laws}, praises Egyptian music for its ancient, codified nature, claiming it was based on \textbf{eternally correct, mathematically-determined} forms that were forbidden to be altered \cite[pp.~656-657]{plato_laws}. Diodorus Siculus states that music was a required, sacred subject for the sons of Egyptian priests \cite[section~1.81]{diodorus_siculus_library}. This strongly suggests that the Greeks, the inheritors of Egyptian knowledge, believed Egypt possessed precisely what this paper proposes: a musical system that was not arbitrary, but ancient, systematic, and deeply integrated with mathematics and cosmic order. The $\pi/6$ system is deeply resonant with the fundamental physics of musical harmony. The most consonant and powerful musical intervals are produced by the simplest integer ratios of frequency---the octave ($2:1$) and the perfect fifth ($3:2$) \cite{helmholtz1885sensations}. A mathematical system's ability to elegantly handle divisions by 2 and 3 is therefore a measure of its compatibility with the principles of harmony.
 
-While there is no evidence the Egyptians used a modern 12-tone chromatic scale, their $\pi/6$ system is deeply resonant with the fundamental physics of musical harmony. The most consonant and powerful musical intervals are produced by the simplest integer ratios of frequency---the octave ($2:1$) and the perfect fifth ($3:2$) \cite{helmholtz1885sensations}. A mathematical system's ability to elegantly handle divisions by 2 and 3 is therefore a measure of its compatibility with the principles of harmony.
+The duodecimal nature of the $\pi/6$ system (base-12) finds its most direct parallel in the structure of music. Unlike a base-10 system, a base-12 system can be cleanly divided by 2, 3, 4, and 6. This means that the core harmonic building blocks of music find a natural and stable home within the same mathematical logic that governs the cubit.
 
-The duodecimal (base-12) framework generated by the $\pi/6$ constant is uniquely suited for this task. Unlike a base-10 system, a base-12 system can be cleanly divided by 2, 3, 4, and 6. This means that the core harmonic building blocks of music find a natural and stable home within the same mathematical logic that governs the cubit. The same system used to divide a building's blueprint into thirds or quarters could be used to conceptualize the division of a vibrating string or air column into its most consonant lengths. This suggests a profound resonance between the Egyptians' chosen system of metrology and the universal laws of acoustics, a system that favored the discovery and application of harmonious proportions in all aspects of their world.
+Note that the 12-tone chromatic scale, the foundation of most Western and Near Eastern music, is also a logarithmic division of the octave. The most fundamental and consonant harmonic intervals---the octave (a $2:1$ frequency ratio) and the perfect fifth (a $3:2$ frequency ratio)---are found in the simplest divisions of a vibrating string or air column. In the $\pi/6$ system, these correspond to the most basic geometric divisions of the circle by 2 ($180^\circ$) and 3 ($120^\circ$), both clean multiples of the $30^\circ$ base unit. The system's base-12 structure is thus inherently compatible with the mathematical principles of musical consonance.
 
-The resonance between the duodecimal $\pi/6$ framework and the physics of harmony is therefore profound. However, we must be precise about what the archaeological record shows. Unlike Mesopotamia, Pharaonic Egypt has left us with no known musical notation. Our best evidence comes from surviving instruments and artistic depictions. Analysis of harps with numerous strings and flutes with varying finger-holes by musicologists like Hans Hickmann points overwhelmingly to the practical use of pentatonic (5-note) and heptatonic (7-note) scales, not a full 12-tone chromatic system \cite{hickmann1957music}. Furthermore, tomb paintings depicting complex hand signals (\textit{chironomy}) prove a sophisticated system for conducting existed, but do not reveal the underlying tonal theory. This absence of direct proof of a 12-note system is not a refutation of the theory, but rather defines its nature. The $\pi/6$ paradigm represents the foundational logic or mathematical canvas---a system uniquely capable of supporting explorations of harmony based on its elegant divisibility by 2, 3, 4, and 6. It provided the ideal mathematical architecture within which the practical music of the Egyptians, with its consonant 5- and 7-note scales, could flourish.
+ The same system used to divide a building's blueprint into thirds or quarters could be used to conceptualize the division of a vibrating string or air column into its most consonant lengths, which connects the duodecimal $\pi/6$ and the physics of harmony with the universal laws of acoustics. However, we must be precise about what the archaeological record shows. Unlike Mesopotamia, Pharaonic Egypt has left us with no known musical notation. Our best evidence comes from surviving instruments and artistic depictions. Analysis of harps with numerous strings and flutes with varying finger-holes by musicologists like Hans Hickmann points overwhelmingly to the practical use of pentatonic (5-note) and heptatonic (7-note) scales, not a full 12-tone chromatic system \cite{hickmann1957music}. Furthermore, tomb paintings depicting complex hand signals (\textit{chironomy}) prove a sophisticated system for conducting existed, but do not reveal the underlying tonal theory. This absence of direct proof of a 12-note system is not a refutation of the theory, but rather defines its nature. The $\pi/6$ and its harmonious divisibility provided the ideal mathematical architecture within which the practical music of the Egyptians, with its consonant 5- and 7-note scales, could flourish.
 
 \subsection{Architectural and Acoustic Resonance}
 
-Any physical structure has natural resonant frequencies determined by its dimensions. Objects resonate most strongly when excited by a frequency whose wavelength corresponds to a simple fraction of the object's size. We can calculate the fundamental resonant frequency ($f$) of the royal cubit ($\lambda = \pi/6$ meters) as a wavelength for sound waves in air ($v \approx 343\,\text{m/s}$):
+The connection between mathematics and harmony was a core principle of ancient architecture, a fact later codified by the Roman architect \textbf{Vitruvius}, who wrote extensively on the need for temples to have mathematically harmonious proportions to achieve correct acoustic properties \cite[Book V]{vitruvius_de_architectura}. The $\pi/6$ system is a perfect tool for achieving this.
+
+The underlying physics is straightforward. The acoustic character of any chamber is defined by its standing waves, or resonant frequencies, which are determined by its dimensions. For a rectangular room of length $L$, the primary resonant frequencies are given by the standard formula $f_n = n \cdot (v / 2L)$, where $v$ is the speed of sound, $L$ is the dimension, and $n$ is the harmonic number (1, 2, 3...) \cite{berg1995physics}. If the chamber's dimensions are designed in simple, whole-number multiples ($m$) of the royal cubit, the formula transforms to reveal the system's inherent musicality:
+\[
+f_n = \frac{n \cdot v}{2 \cdot (m \cdot \pi/6)} = \frac{3nv}{m\pi}
+\]
+This demonstrates that a cubit-based architecture generates a predictable series of resonant frequencies that are all harmonically related to a fundamental tone defined by the cubit itself ($f \approx 655\,\text{Hz}$ for a wavelength $\lambda$ equal to one cubit).
+
+The most compelling evidence for the intentional application of this principle comes from the \textbf{King's Chamber of the Great Pyramid of Khufu}. Its dimensions, first precisely measured by \textbf{W. M. Flinders Petrie} and confirmed by modern analysis, are a masterclass in $\pi/6$-based design \cite{petrie1883pyramids, rossi2004architecture}:
+\begin{itemize}
+    \item \textbf{Length ($L$): 20 royal cubits} ($\approx 10.47\,\text{m}$)
+    \item \textbf{Width ($W$): 10 royal cubits} ($\approx 5.23\,\text{m}$)
+\end{itemize}
+The chamber's proportions are a perfect \textbf{2:1 ratio}. Calculating the fundamental resonant frequencies ($n=1$) for these dimensions reveals a stunning result:
+\begin{itemize}
+    \item \textbf{Length Frequency ($f_L$):} $343 / (2 \times 10.47) \approx 16.4\,\text{Hz}$
+    \item \textbf{Width Frequency ($f_W$):} $343 / (2 \times 5.23) \approx 32.8\,\text{Hz}$
+\end{itemize}
+The fundamental frequency of the chamber's width is \textbf{exactly double} that of its length, creating a perfect \textbf{musical octave}. This is one of the most powerful and consonant acoustic relationships possible. A low-frequency ritual chant near the male vocal range (e.g., the 4th harmonic of the width, $\approx 131\,\text{Hz}$, the musical note C3) would excite multiple, harmonically-related resonant modes simultaneously. The sound would be amplified and enriched by the chamber itself, creating an acoustically powerful and awe-inspiring environment.
+
+This design philosophy was not an isolated case. The vast \textbf{Hypostyle Hall at Karnak} features a dense forest of columns whose spacing and height followed specific proportional rules. Scholars like \textbf{Alexander Badawy}, who pioneered the study of Egyptian architectural design, identified a consistent proportional system based on ratios like 8:5 (a close approximation of the golden ratio, $\phi$) and the use of the $\sqrt{2}$ diagonal for construction \cite{badawy1965ancient}. These are not arbitrary dimensions; they are geometric relationships known to produce visual and, by extension, acoustic harmony. From a physics perspective, a grid of regularly spaced columns acts as a complex acoustic diffraction grating, capable of diffusing sound to reduce echoes or focusing sound energy into specific ritual zones.
+
+The tradition of building sacred spaces on harmonic principles, inherited from Egypt, reached its Hellenic apex in the \textbf{Parthenon of Athens}. The architects Ictinus and Callicrates designed the temple using a system of proportions widely held to be based on the \textbf{golden ratio, $\phi$} \cite{vandeventer1978space}. This is profoundly significant, as one of the key properties of the $\pi/6$ system is its own deep connection to $\phi$ through the convergence $\phi^2/5 \approx \pi/6$. The consistent appearance of $\phi$-based proportions in both Egyptian and Greek masterworks suggests a continuous tradition of harmonic architecture. The Greeks made the philosophy explicit through Pythagoreanism, but the Egyptians appear to have laid the practical, metrological foundation centuries earlier, creating a system that unified geometry, number, and harmony to tune sacred space itself.
+
+In summary, any physical structure has natural resonant frequencies determined by its dimensions. Objects resonate most strongly when excited by a frequency whose wavelength corresponds to a simple fraction of the object's size. We can calculate the fundamental resonant frequency ($f$) of the royal cubit ($\lambda = \pi/6$ meters) as a wavelength for sound waves in air ($v \approx 343\,\text{m/s}$):
 \[
 f = \frac{v}{\lambda} = \frac{343}{\pi/6} \approx 655\,\text{Hz}
 \]
-This frequency is approximately an E5 on the modern musical scale. More importantly, structures with primary dimensions built in multiples of the royal cubit would have natural acoustic standing waves at this frequency and its harmonics. This could imbue chambers used for ritual chanting or music with enhanced acoustic properties, making them feel more ``alive'' or divine. It is highly plausible that the Egyptians, through empirical observation over centuries, discovered that architectural proportions derived from the $\pi/6$ system were not only visually harmonious but also acoustically resonant, codifying these physically optimized dimensions into their state-sanctioned metrology. This suggests a sophisticated feedback loop between their practical engineering, their mathematical system, and the direct physical and sensory experience of harmony.
+This frequency is approximately an E5 on the modern musical scale. More importantly, as described above, structures with primary dimensions built in multiples of the royal cubit would have natural acoustic standing waves at this frequency and its harmonics.
 
 
 \section{Mathematical Implications and Modern Relevance}
@@ -414,6 +420,47 @@ The focus on intrinsic geometric properties characteristic of non-Euclidean geom
 \textbf{Modern applications could benefit from reconsidering the Egyptian approach to measurement philosophy.} The integration of fundamental constants into practical measurement systems offers insights for contemporary standardization efforts, particularly in applications involving natural units and physical constants. The $\pi/6$ foundation's unification of dimensional relationships provides alternative models for modern measurement frameworks.
 
 The system's demonstrated practical advantages in commercial, architectural, and administrative applications suggest potential benefits for contemporary measurement approaches. The sphere-based volume system's superiority for natural container shapes offers insights for modern packaging, commerce, and engineering applications where spherical relationships predominate.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    font=\small,
+    node distance=0.5cm,
+    arrow/.style={-Latex, thick},
+    valuebox/.style={
+        draw=blue!70!black, 
+        fill=blue!10, 
+        rounded corners, 
+        align=center, 
+        inner sep=4pt
+    }
+]
+    % --- Draw the Royal Cubit Rod ---
+    \draw[fill=yellow!30!white, draw=black, very thick] (0,0) rectangle (10, 0.8);
+    \foreach \i in {1,...,6} {
+        \draw[thick] (10*\i/7, 0) -- (10*\i/7, 0.8); % Palms
+    }
+    \foreach \i in {1,...,27} {
+        \draw (10*\i/28, 0) -- (10*\i/28, 0.4); % Fingers/Digits
+    }
+    \node[above=0.1cm of {(5, 1.7)}, font=\bfseries] {Egyptian Royal Cubit (\textit{meh niswt})};
+    \draw[<->, thick] (0,-0.2) -- (10,-0.2) node[midway, below] {Length $\approx \SI{52.36}{\centi\meter}$};
+
+    % --- Mathematical Value Nodes ---
+    \node[valuebox] (p6) at (5, 3.5) {Circular Geometry \\ $\frac{\pi}{6} \approx 0.523598\dots$};
+    \node[valuebox] (phi2) at (0.5, 3) {Golden Ratio Relation \\ $\frac{\phi^2}{5} \approx 0.523606\dots$};
+    \node[valuebox] (pidiff) at (9.5, 3) {Transcendental Difference \\ $\pi - \phi^2 \approx 0.523558\dots$};
+
+    % --- Arrows connecting values to the concept ---
+    \coordinate (target) at (5,1.2); % A point just above the cubit rod
+    \draw[arrow, blue!60, thick] (p6.south) -- (target);
+    \draw[arrow, blue!60, thick] (phi2.south) .. controls +(0,-0.5) and +(-1,-0.5) .. (target);
+    \draw[arrow, blue!60, thick] (pidiff.south) .. controls +(0,-0.5) and +(1,-0.5) .. (target);
+
+\end{tikzpicture}
+\caption{The Royal Cubit as a fundamental mathematical constant. Its archaeologically verified length of approximately $\SI{52.36}{\centi\meter}$ represents the convergence of three independent mathematical expressions: the primary circular division ($\pi/6$), a golden ratio formulation ($\phi^2/5$), and a transcendental difference ($\pi-\phi^2$). This convergence strongly suggests deliberate mathematical design rather than anthropometric chance.}
+\label{fig:cubit_convergence}
+\end{figure}
 
 \subsection{Implications for Mathematical History}
 
