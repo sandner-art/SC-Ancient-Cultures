@@ -6,11 +6,11 @@ import matplotlib.patches as patches
 plt.rcParams['font.family'] = 'serif'
 plt.rcParams['font.serif'] = ['STIXGeneral', 'Times New Roman', 'DejaVu Serif']
 plt.rcParams['mathtext.fontset'] = 'stix'
-plt.rcParams['axes.titlesize'] = 18
-plt.rcParams['axes.labelsize'] = 14
-plt.rcParams['xtick.labelsize'] = 12
-plt.rcParams['ytick.labelsize'] = 12
-plt.rcParams['legend.fontsize'] = 12
+plt.rcParams['axes.titlesize'] = 20
+plt.rcParams['axes.labelsize'] = 16
+plt.rcParams['xtick.labelsize'] = 14
+plt.rcParams['ytick.labelsize'] = 14
+plt.rcParams['legend.fontsize'] = 14
 plt.rcParams['figure.titlesize'] = 20
 
 # --- Figure Creation ---
@@ -38,16 +38,16 @@ ax.plot([0, x_coord], [0, 0], color='green', linestyle='--', lw=2, label=r'Adjac
 # --- Add Annotations and Proofs ---
 # Angle marker
 ax.add_patch(patches.Arc((0, 0), 0.4, 0.4, angle=0, theta1=0, theta2=30, color='purple', lw=1.5))
-ax.text(0.25, 0.08, r'$30^\circ = \frac{\pi}{6}$', color='purple', fontsize=16)
+ax.text(0.25, 0.06, r'$30^\circ = \frac{\pi}{6}$', color='purple', fontsize=18)
 
 # Labels for side lengths
-ax.text(x_coord / 2, y_coord / 2 + 0.02, 'R=1', color='red', fontsize=14, rotation=30)
-ax.text(x_coord + 0.02, y_coord / 2, r'$\sin(\frac{\pi}{6}) = \frac{1}{2}$', color='blue', fontsize=16)
-ax.text(x_coord / 2, -0.05, r'$\cos(\frac{\pi}{6}) = \frac{\sqrt{3}}{2}$', color='green', fontsize=16)
+ax.text(x_coord / 2, y_coord / 2 + 0.06, 'R=1', color='red', fontsize=16, rotation=30)
+ax.text(x_coord + 0.02, y_coord / 2, r'$\sin(\frac{\pi}{6}) = \frac{1}{2}$', color='blue', fontsize=18)
+ax.text(x_coord / 2, -0.14, r'$\cos(\frac{\pi}{6}) = \frac{\sqrt{3}}{2}$', color='green', fontsize=18)
 
 # Point on circle
 ax.plot(x_coord, y_coord, 'ro')
-ax.text(x_coord + 0.03, y_coord + 0.03, r'$(\frac{\sqrt{3}}{2}, \frac{1}{2})$', fontsize=14)
+ax.text(x_coord + 0.03, y_coord + 0.03, r'$(\frac{\sqrt{3}}{2}, \frac{1}{2})$', fontsize=18)
 
 # --- Final Plot Adjustments ---
 ax.set_xlabel('x-axis', fontsize=14)
