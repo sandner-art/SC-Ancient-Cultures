@@ -7,9 +7,11 @@
 \usepackage[numbers, sort&compress]{natbib}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{threeparttable}
 \usepackage{graphicx}
 \usepackage[margin=1in]{geometry}
 \usepackage{booktabs}
+\usepackage{caption}
 \usepackage[labelfont=bf]{caption}
 \usepackage{hyperref}
 \hypersetup{
@@ -69,23 +71,30 @@ This presents a fundamental puzzle: why did a civilization so thoroughly decimal
 
 \subsection{The \texorpdfstring{$\pi/6$}{pi/6} Theory: A Unified Geometric Origin}
 
-This paper thesis is a radical: the Egyptian royal cubit was not an arbitrary anatomical measure, but a deliberate geometric choice representing \textbf{a fundamental section of the circle}, a value we denote as \textbf{$\pi/6$ radians ($30^\circ$)}. We argue this choice was the ``proto-axiom'' for a unified mathematical philosophy that explains the puzzles of the historical record.
+This paper thesis is a radical one: the Egyptian royal cubit was not an arbitrary anatomical measure, but a deliberate geometric choice representing \textbf{a fundamental section of the circle}, a value we denote as \textbf{$\pi/6$ radians ($30^\circ$)}. We argue this choice was the ``proto-axiom'' for a unified mathematical philosophy that explains the puzzles of the historical record.
 
-We propose that the cubit's precise length was ``fine-tuned'' through a process of geometric discovery that linked it to a geodetic unit equivalent to the modern meter. This hypothesis rests on several profound and reciprocal congruences:
+The primary assertion of this paper is that the royal cubit was a \textbf{geometrically determined length}, likely ``fine-tuned'' from an earlier anatomical approximation into a robust mathematical standard. This hypothesis immediately confronts the question of whether the Egyptians possessed the necessary knowledge of $\pi$ for such a feat. The archaeological and textual evidence, as analyzed by scholars from \textbf{Neugebauer} to \textbf{Gillings} and \textbf{Imhausen}, demonstrates that the Egyptians did not have a single, fixed value for $\pi$, but rather a sophisticated portfolio of approximations (Tab~\ref{tbl:pi_approximations}) used for different practical contexts \cite{gillings1982mathematics, imhausen2016mathematics}.
+
+The most famous of these approximations, derived from the \textbf{Rhind and Moscow Papyri}, is $\pi \approx (16/9)^2 \approx 3.1605$, a value of remarkable accuracy for the 2nd millennium BCE, used for precise area and volume calculations \cite{clagett1999ancient}. However, architectural evidence from the Great Pyramid's $\text{perimeter}/\text{height} = 2\pi$ relationship, and from the layout of large-scale temple colonnades, strongly suggests the use of the more familiar $\pi \approx 22/7$ for monumental construction. This demonstrates a pragmatic ability to select the appropriate tool for the task.
+
+Therefore, we propose the cubit's length was derived from a foundational geometric principle accessible through this known mathematics: \textbf{the ratio of a circle's circumference to its diameter, divided by the six sides of a perfect hexagon}. This definition, which we denote with the modern symbol $\pi/6$, represents a ``sacred ratio'' unifying the circle and hexagon. If an ancient geometer were to calculate this ratio using their most precise documented value ($\pi \approx 3.1605$), the resulting length relative to a 1-meter geodetic standard would be \textbf{\SI{52.67}{\centi\meter}}. This theoretical length falls perfectly within the observed archaeological range of surviving cubit rods. 
+
+There are profound and reciprocal congruences we need to mention regarding the geometric construction, and we are also illustrating these in the paper. It is pivotal to mention them here, although we do not have the conclusive explanation, nor proof metric system was used in Egypt:
 \begin{enumerate}
     \item A circle with a \textbf{radius of 1 meter} has a circumference of \textbf{12 royal cubits}.
     \item A circle with a \textbf{diameter of 1 meter} has a circumference of \textbf{6 royal cubits}.
-    \item Other geometric constructions common in the ancient world, specifically the pentagon (pentagram), hexagon (hexagram) provide strong, provable connections between royal cubit-based geometry, the base-10 and base-12 systems, spherical geometry, and derivations of the meter. 
 \end{enumerate}
+
+Other geometric constructions common in the ancient world, specifically the pentagon (pentagram), hexagon (hexagram) provide strong, provable connections between royal cubit-based geometry, the base-10 and base-12 systems, spherical geometry, and derivations of the meter. 
+
 The existence of these elegant integer and geometric relationships provides a powerful, non-random anchor for the entire system. From this foundation, we will systematically address the four questions that challenge our thesis:
 \begin{itemize}
     \item \textbf{(a) The Question of $\pi$:} Did the Egyptians possess the necessary mathematical knowledge? We will show that their practical methods were sufficient.
-    \item \textbf{(b) The Anachronism of the Meter:} Is the meter link a coincidence? We argue it is a consequence of both units being independently derived from spherical Earth geometry.
+    \item \textbf{(b) The Anachronism of the Meter:} Is the meter link a coincidence? We propose it is a consequence of both units being independently derived from spherical and circular geometry.
     \item \textbf{(c) The Evidence for Spherical Geometry:} Did the Egyptians understand curved space? We will build on the work of \cite{spence2000ancient}, \cite{magli2013architecture}, and \cite{belmonte2023astronomy}, whose research on monumental alignments provides strong evidence for a functional understanding of spherical celestial mechanics.
     \item \textbf{(d) The Duodecimal-Decimal Paradox:} This paper's central claim is that the duodecimal (base-12) system of the night sky and the decimal (base-10) system of the administration were not separate traditions, but were unified within the $\pi/6$ geometric framework, which was profound enough to contain and generate them both.
 \end{itemize}
-This paper will demonstrate that the $\pi/6$ paradigm is not a modern retrofitting, but a coherent system of thought---a lost mathematical philosophy whose rediscovery challenges our understanding of ancient science.
-
+We will demonstrate that the $\pi/6$ paradigm is not a modern retrofitting, but a coherent system of thought---a lost mathematical philosophy whose rediscovery challenges our understanding of ancient science.
 
 The genius of the Egyptian system, and the engine of its millennia-long success, lies in its unification of the abstract and the practical. It achieved this by encoding a fundamental mathematical relationship directly into its primary, state-sanctioned unit of measure. The royal cubit was defined not by the simple happenstance of human anatomy—even if it was cleverly promoted and disseminated as such—but as the physical instantiation of a \textbf{fundamental harmonic division of the circle}, a concept we now denote with the symbol $\pi/6$. This value, representing a primary geometric relationship long before the constant was formally symbolized as '$\pi$', reveals its deep connection to spherical reality through its uncanny precision in modern, geodetically-derived meters. This single, deliberate choice is the 'proto-axiom' from which the entire paradigm unfolds. From it, a complete duodecimal system of angular measurement (30°, 60°, 90°, 360°) emerges as a natural consequence. The divisions of our time and the degrees of our circles are not arbitrary cultural artifacts but the logical, practical outflows of a unified geometry grounded in one brilliantly chosen constant.
 
@@ -121,12 +130,38 @@ The precise origin of the royal cubit is central to understanding Egyptian mathe
 
 
 \subsection{Explanation of Variations in Royal Cubit Lengths}
+\label{sec:length_variations}
 
 The archaeological range for surviving royal cubit rods is typically cited as \SIrange{52.3}{52.9}{\centi\meter} \cite{lepsius1865altagyptische}. Far from contradicting the theoretical value of $\pi/6$ meters ($\approx\SI{52.36}{\centi\meter}$), this range contains stunning confirmations. The ceremonial cubit of Maya, a high official under Tutankhamun, measures \SI{52.35}{\centi\meter}, agreeing with the $\pi/6$ theory to within \SI{0.1}{\milli\meter} \cite{imhausen2016mathematics}. Furthermore, the most reliable measure of the ideal standard is not any single, potentially warped wooden artifact, but the aggregated result of monumental construction. Modern surveys of the Great Pyramid's base yield a mean cubit value of \SI{0.5236}{\meter}, a near-perfect match \cite{dash2015survey}.
 
 Most compellingly, the observed variation in cubit lengths is predicted by the theory itself when combined with known Egyptian mathematical practices. If a scribe used the known approximation for pi from the Rhind Papyrus ($\pi \approx 256/81$) to calculate the length of a $\pi/6$ cubit, the result would be \SI{52.67}{\centi\meter}---a value falling squarely in the middle of the archaeological range. The slight variations in cubit rods, therefore, do not disprove the $\pi/6$ standard. Rather, they appear to be the predictable result of calculating a sophisticated theoretical value using the practical arithmetic of the day.
 
-
+\begin{table}[h!]
+\centering
+\begin{threeparttable}
+    \caption{Theoretical Royal Cubit Lengths Derived from Ancient $\pi$ Approximations}
+    \label{tbl:pi_approximations}
+    \begin{tabular}{l l l l S[table-format=2.2] l}
+        \toprule
+        \textbf{$\pi$ Approx.} & \textbf{Value} & \textbf{Context} & \textbf{($\pi/6$)} & {\textbf{(cm)}} & \textbf{Falls in Range?} \\
+        \midrule
+        $(16/9)^2 = 256/81$ & $\sim3.1605$  & Rhind \& Moscow Papyri & $(256/81) / 6$ & 52.67 & \textbf{Yes} (Middle range) \\
+        \addlinespace
+        $22/7$              & $\sim3.1429$  & Architectural          & $(22/7) / 6$   & 52.38 & \textbf{Yes} (Lower bound) \\
+        \addlinespace
+        $25/8$              & $3.125$       & Practical Field Measure  & $(25/8) / 6$   & 52.08 & No (Just below) \\
+        \addlinespace
+        $3$                 & $3.000$       & Demotic/Babylonian       & $3 / 6$        & 50.00 & No (Below) \\
+        \midrule % Separates ancient values from the modern reference
+        True $\pi$ (Ref.) & $\sim3.14159$ & Modern Mathematics     & $\pi / 6$      & 52.36 & \textbf{Yes} (Defines l. b.) \\
+        \bottomrule
+    \end{tabular}
+    \begin{tablenotes}[flushleft] % The note section
+      \small % Optional: make the note text slightly smaller
+      \item[*] This table demonstrates how the observed archaeological range of royal cubit lengths ($\sim\SI{52.3}{\centi\meter}$ to $\sim\SI{52.9}{\centi\meter}$) can be explained as the result of calculating a single geometric definition ($\pi/6$) using the different practical approximations for $\pi$ available to the Egyptians. The calculations are based on a 1-meter geodetic standard.
+    \end{tablenotes}
+\end{threeparttable}
+\end{table}
 
 \subsection{Complete Angular System Generation}
 
@@ -518,9 +553,9 @@ The cultural transmission evidence reveals mathematics as practical technology t
 
 The evidence presented in this paper converges on a single conclusion: Ancient Egypt conceived and implemented a comprehensive dodecimal metrology, a unified $1\text{D} \to 3\text{D}$ mathematical framework derived from the first principles of spherical geometry. What is certain is that the Egyptians created a system of remarkable internal coherence. The choice of the royal cubit as a standard was not arbitrary; its length ($\approx\pi/6$ meters) was the `proto-axiom' that unified linear measure with the angular divisions of a circle and, most remarkably, linked both to commodity volumes through a direct spherical relationship with the \textit{hekat}. 
 
-We argued that the observed variation in archaeological cubit rods is not random, but is strongly explained by the use of different practical approximations for $\pi$ in antiquity. This coherent view of the cubit's ideal length is reinforced by the discovery of a remarkable and simple \textbf{geometric reciprocity}. The evidence reveals that a royal cubit can be used to construct a length congruent with one meter (to $99.998\%$ accuracy), while a circle with a 1-meter diameter has a circumference of exactly 6 royal cubits, thus deriving the ancient unit from the modern geodetic one. The sheer simplicity and elegance of these reciprocal constructions, using geometric forms well-known in antiquity, rules out coincidence and forces us to confront two profound and competing historical hypotheses.
-
-The first hypothesis is that the Egyptians themselves performed these constructions, first in an explorative way. Beginning with an approximate anatomical cubit, they discovered its stunning geometric relationship with a geodetic 'meter' and deliberately and iteratively "fine-tuned" the official royal cubit's length to perfect this harmony. In this view, the cubit is a cosmologically significant instrument, and its link to the meter is a direct, though likely guarded, feature of its design.
+We argued that the observed variation in archaeological cubit rods is not random, but is strongly explained by the use of different practical approximations for $\pi$ in antiquity (Section~\ref{sec:length_variations}). This coherent view of the cubit's ideal length is reinforced by the discovery of a remarkable and simple \textbf{geometric reciprocity}. The evidence reveals that a royal cubit can be used to construct a length congruent with one meter (to $99.998\%$ accuracy), while a circle with a 1-meter diameter has a circumference of exactly 6 royal cubits, thus deriving the ancient unit from the modern geodetic one. The sheer simplicity and elegance of these reciprocal constructions, using geometric forms well-known in antiquity, rules out coincidence and forces us to confront two profound and competing historical hypotheses.
+\newpage
+The first hypothesis is that the Egyptians themselves performed these constructions, first in an explorative way. Beginning with an approximate anatomical cubit, they discovered its stunning geometric relationship with a geodetic 'meter' as geometric construction help and iteratively "fine-tuned" the official royal cubit's length to perfect this harmony. In this view, the cubit would be a cosmologically significant instrument, and its link to the meter was a direct, though likely guarded, feature of its design. However, there is no archeological evidence yet for using meter in Ancient Egypt, as a unit or as a concept.
 
 The second, more conservative hypothesis is that the 18th-century definition of the meter was philosophically, if not technically, influenced by the enduring legacy of Egypt as a civilization that had successfully unified its science and statecraft. Consider that the original meter definition was grounded with spherical geometry of Earth (1791), it was later redefined by the wavelength and emission line of krypton-86 (1960), then by the speed of light and time fraction calculation (1983), and most recently by the caesium frequency (2019). In this view, the congruence is a modern echo of an ancient ideal. While proving either hypothesis is beyond the present scope, they represent the logical consequences of the geometric evidence we present. The $\pi/6$ paradigm is robust enough to demand such fundamental questions about the history of science.
 
