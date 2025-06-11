@@ -16,7 +16,7 @@ Our goal is to investigate the deep connections between ancient physics, mathema
 
 This repository's inaugural paper presents a radical new paradigm for understanding ancient Egyptian mathematics.
 
-**Sandner, D. (2025). *Proto-non-Euclidean Geometry in Ancient Egypt: The Royal Cubit and Its Millennial Mathematical Legacy* (v1.0.0). Zenodo. [https://doi.org/10.5281/zenodo.15639503](https://doi.org/10.5281/zenodo.15639503)**
+**Sandner, D. (2025). *Proto-non-Euclidean Geometry in Ancient Egypt: The Royal Cubit and Its Millennial Mathematical Legacy* (v1.0.0). Zenodo. [https://doi.org/10.5281/zenodo.15639502](https://doi.org/10.5281/zenodo.15639502)**
 
 ### Thesis Overview
 
@@ -62,7 +62,7 @@ Sandner, D. (2025). Proto-non-Euclidean Geometry in Ancient Egypt: The Royal Cub
   publisher    = {Zenodo},
   version      = {v1.0.0},
   doi          = {10.5281/zenodo.15639503},
-  url          = {https://doi.org/10.5281/zenodo.15639503}
+  url          = {https://doi.org/10.5281/zenodo.15639502}
 }
 ```
 
