@@ -49,7 +49,37 @@
 
 \section{Introduction}
 
-In approximately 240 BCE, Eratosthenes of Cyrene, the chief librarian at the great Library of Alexandria, executed an experiment of remarkable ingenuity and consequence. By observing the difference in solar shadow angles at two locations in Egypt, he produced the first quantitative, evidence-based measurement of the Earth's circumference. This achievement stands as a foundational moment in the history of science, marking a shift from purely philosophical speculation about the cosmos to its empirical and mathematical measurement. It represents one of the earliest descriptions of successful applications of the scientific method, integrating a theoretical model, precise observation, and geometric calculation to reveal a fundamental truth about the natural world.
+In approximately 240 BCE, Eratosthenes of Cyrene, the chief librarian at the great Library of Alexandria, executed an experiment of remarkable ingenuity and consequence. By observing the difference in solar shadow angles at two locations in Egypt, he produced the first quantitative, evidence-based measurement of the Earth's circumference \cite{Heath1921}. This achievement stands as a foundational moment in the history of science, marking a shift from purely philosophical speculation about the cosmos to its empirical and mathematical measurement. It represents one of the earliest descriptions of successful applications of the scientific method, integrating a theoretical model, precise observation, and geometric calculation to reveal a fundamental truth about the natural world.
+
+The elegance of Eratosthenes' experiment lies in its profound simplicity and its masterful synthesis of existing knowledge with an insightful measurement. The experimental design, known to us primarily through the writings of later authors such as Cleomedes \cite{Cleomedes1990}, was not a complex logistical operation but a brilliant intellectual one. It was predicated on three known facts and one key observation.
+
+First, Eratosthenes, as a master geographer, knew from records and accounts that the city of Syene (modern Aswan) was located on or very near the Tropic of Cancer. This geographical fact meant that at local noon on the day of the summer solstice, the Sun would be directly at the zenith. At this specific moment, vertical objects like an obelisk—or, as Cleomedes anecdotally described, the bottom of a deep well—would be fully illuminated and cast no shadow. This established a \textbf{perfect, zero-angle baseline} for the experiment. Therefore, Eratosthenes did not even need to be in Syene or coordinate with an observer there; he could rely on this well-documented fact.
+
+Second, he knew the approximate overland distance ($d$) between Syene and his own city of Alexandria, which he took to be 5,000 stadia based on the surveys of bematists.
+
+Third, his theoretical model rested on two foundational assumptions: (1) that the Earth is a sphere, and (2) that the Sun is so distant that its rays arrive as basically parallel lines across the globe.
+
+With these three pieces of knowledge, the experiment was reduced to a single, local observation. In Alexandria, at local noon on the same day of the summer solstice, Eratosthenes measured the shadow cast by a gnomon (a vertical rod). He found that the angle of the shadow ($\theta_{\text{Alexandria}}$) was 1/50th of a full circle, or 7.2 degrees.
+
+The geometric insight that followed was the linchpin of the entire discovery (Figure~\ref{fig:geo_rationale}). Because the sun's rays are parallel, the shadow angle measured in Alexandria is, by the principle of alternate interior angles, equal to the central angle ($\Delta\theta$) subtended at the Earth's center by the arc between Syene and Alexandria. The measurement in Alexandria was therefore a direct measurement of the Earth's curvature between the two cities.
+
+The final calculation was straightforward. If the angular separation of $7.2^\circ$ corresponds to a terrestrial distance of 5,000 stadia, then the full $360^\circ$ circumference of the Earth ($C$) would be:
+\[
+C = \frac{360^\circ}{7.2^\circ} \times 5,000 \text{ stadia} = 50 \times 5,000 \text{ stadia} = 250,000 \text{ stadia}
+\]
+
+This result of 250,000 stadia is astonishing, but its true accuracy hinges on the ambiguous length of the \textit{stadion} unit Eratosthenes employed. The modern mean circumference of the Earth is approximately 40,075~km. If Eratosthenes was using the local Egyptian stadion of about 157.5~meters, his measurement translates to \textbf{39,375~km}—an error of less than 2\%. However, if he was using the more common Attic stadion of about 185~meters, his result becomes \textbf{46,250~km}, an overestimate of roughly 15\%. This very uncertainty in the result—ranging from breathtakingly accurate to merely a good estimate—reveals that the most important part of the historical analysis is not the final number, but the reconstruction of the methods, logic, and data Eratosthenes used to obtain it.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/Eratosthenes_Experiment_Final_Corrected.png}
+    \caption{
+        The geometric and temporal foundations of Eratosthenes' experiment. 
+        \textbf{(a)} The core geometric principle, where the sun's shadow angle at Alexandria ($\theta$) is equal to the central angle between the two cities ($\Delta\theta$) due to the parallel nature of the sun's rays. 
+        \textbf{(b)} The temporal rationale, illustrating that only on the summer solstice are the sun's rays perpendicular to the surface at Syene (located on the Tropic of Cancer), creating the necessary zero-shadow condition for the experiment's baseline measurement.
+    }
+    \label{fig:geo_rationale}
+\end{figure}
 
 The purpose of this paper is not simply to recount this famous experiment, but to conduct a deep methodological analysis of it—a form of \textbf{scientific archaeology}. We aim to deconstruct its components to understand not only \textit{how} it worked, but also the practical challenges and sources of uncertainty that defined its execution in the ancient world. The scope of this investigation is threefold: first, to reconstruct the ancient methodology with a focus on the measurement techniques and data-processing strategies Eratosthenes likely employed to manage imperfect information; second, to develop a comprehensive modern framework that refines and generalizes the experiment using contemporary technology and mathematical formalisms; and third, to extend its underlying principles into a theoretical tool for comparative planetology, exploring what this 2,200-year-old method can teach us about discerning the properties of other worlds.
 
@@ -97,11 +127,13 @@ Eratosthenes' own work on his measurement, likely titled \textit{On the Measurem
 
 \subsection{Isomorphism and the Cosmological Debate: A Heliocentric Blind Spot}
 
-A crucial aspect of Eratosthenes’ experiment is its \textbf{isomorphism} with respect to the dominant cosmological models of the day. The experiment's results are identical whether one assumes a geocentric (Earth-centered) or a heliocentric (Sun-centered) system. The underlying geometry depends only on two assumptions: (1) the Earth is spherical, and (2) the Sun is sufficiently far away that its rays arrive as parallel lines. The question of which celestial body is in motion is irrelevant to the measurement of shadow angles at a single instant.
+An important aspect of Eratosthenes’ experiment is its \textbf{isomorphism} with respect to the dominant cosmological models of the day. The experiment's results are identical whether one assumes a geocentric (Earth-centered) or a heliocentric (Sun-centered) system. The underlying geometry depends only on two assumptions: (1) the Earth is spherical, and (2) the Sun is sufficiently far away that its rays arrive as parallel lines. The question of which celestial body is in motion is irrelevant to the measurement of shadow angles at a single instant.
 
 This kinematic equivalence is a primary reason why Eratosthenes' result, while revolutionary, did not challenge the prevailing geocentric model that would later be formalized by Ptolemy. His measurement could be—and was—comfortably absorbed into the geocentric framework by providing the first credible value for the size of the central Earth. This demonstrates a key principle in the history of science: a single experiment, no matter how brilliant, often cannot by itself overturn a well-established paradigm, especially if its results can be incorporated by that paradigm.
 
 It is essential to note that heliocentrism was not an unknown concept. \textbf{Aristarchus of Samos (c. 310 – c. 230 BCE)}, a contemporary of Eratosthenes, had already proposed a fully heliocentric model, arguing that the Earth rotated on its axis and revolved around a stationary Sun. Eratosthenes, working at the center of the Greek intellectual world, was almost certainly aware of Aristarchus's hypothesis \cite{Heath1913}. The fact that his experiment could not distinguish between the two models serves as a perfect illustration of its specific, geodetic focus. It was designed to answer the question "How large is the Earth?", not "What is the Earth's place in the cosmos?".
+
+
 
 \section{Reconstruction of the Ancient Methodology: A Study in Uncertainty}
 
@@ -499,5 +531,67 @@ This calculates the required solar altitude $H$ between any two points on a flat
 
 \subsubsection*{Conclusion to Appendix A}
 The derivations presented in this appendix collectively form the mathematical backbone of the paper's analysis. Together, these mathematical formalisms ensure that the paper's conclusions are not merely descriptive but are grounded in robust, verifiable geometric and astronomical principles.
+
+\section*{Appendix B: Comparative Metrological Data}
+
+This appendix provides quantitative data to support the analysis of Eratosthenes' experiment and the physical realities of Earth's geometry. Its primary purpose is to illustrate how the planet's curvature, which is negligible at human scales, becomes a decisive factor over the geodetic distances involved in the ancient measurement.
+
+\subsection*{The Formula for Curvature Drop}
+
+To quantify the effect of curvature, we can calculate the "curvature drop" ($h_{\text{drop}}$). This is the vertical distance a point on the Earth's surface "drops" away from a perfectly straight, tangential line extending from an observer's position. For a given geodetic (great-circle) distance $d$ and a planetary radius $R$, this drop can be accurately approximated by the formula:
+\[
+h_{\text{drop}} \approx \frac{d^2}{2R}
+\]
+This approximation is derived from the Pythagorean theorem and is highly accurate for distances up to several thousand kilometers. For all calculations in Table B.2, we use the Earth's mean radius, $R \approx 6,371$ km.
+
+\subsection*{Tables of Conversion and Curvature}
+
+To contextualize the calculations, Table~B.1 provides the key conversion factors for the Hellenistic stadia discussed in this paper. Table~B.2 then applies these conversions and the curvature formula to a range of distances, from a short 10 km to well beyond the scale of Eratosthenes' experiment, showing how the deviation from a flat plane grows quadratically with distance.
+
+\begin{table}[htbp]
+\centering
+\caption{Hellenistic Stadia and Modern Equivalents}
+\label{tab:stadia_conversion}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Stadion Name} & \textbf{Length (m)} & \textbf{km per Stadion} & \textbf{Miles per Stadion} \\
+\midrule
+\textbf{Egyptian} & $\approx 157.5$ & 0.1575 & $\approx 0.0979$ \\
+\textbf{Attic}    & $\approx 185.0$ & 0.1850 & $\approx 0.1150$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Earth's Curvature Drop over Geodetic Distances}
+\label{tab:curvature_drop}
+\small
+\begin{tabular}{@{}rrrrrr@{}}
+\toprule
+\multicolumn{2}{c}{\textbf{Distance (Stadia)}} & \multicolumn{2}{c}{\textbf{Geodetic Distance}} & \multicolumn{2}{c}{\textbf{Curvature Drop ($h_{\text{drop}}$)}} \\
+\cmidrule(r){1-2} \cmidrule(lr){3-4} \cmidrule(l){5-6}
+\textbf{Egyptian} & \textbf{Attic} & \textbf{Kilometers} & \textbf{Miles} & \textbf{Meters} & \textbf{Feet} \\
+\midrule
+64 & 54 & 10 & 6.2 & $\approx 7.8$ & $\approx 26$ \\
+635 & 541 & 100 & 62.1 & $\approx 785$ & $\approx 2,575$ \\
+\addlinespace
+\textbf{5,000} & 4,257 & \textbf{787.5} & 489.3 & $\approx 48,680$ & $\approx 159,711$ \\
+5,937 & \textbf{5,000} & \textbf{925.0} & 574.8 & $\approx 67,000$ & $\approx 219,816$ \\
+\addlinespace
+12,700 & 10,000 & 1,850 & 1,150 & $\approx 268,000$ & $\approx 879,265$ \\
+25,400 & 20,000 & 3,700 & 2,300 & $\approx 1,072,000$ & $\approx 3,517,060$ \\
+\bottomrule
+\end{tabular}
+\captionsetup{font=small, justification=justified}
+\caption*{
+\textbf{Notes:} This table demonstrates the dramatic, non-linear increase in curvature drop with distance. At 10 km, the drop is less than 8 meters. At the 788 km distance of the experiment, the drop is over 48 kilometers (nearly 30 miles), a monumental deviation from a flat plane that is easily measurable. The key experimental distances are highlighted in bold. Curvature is calculated using $h_{\text{drop}} \approx d^2/(2R)$ with $R = 6371$ km.
+}
+\end{table}
+
+\subsubsection*{Conclusion to Appendix B}
+
+The data presented here numerically substantiates the foundational premise of Eratosthenes' work. While the Earth appears flat over short, everyday distances, its spherical nature produces a significant and measurable geometric effect over the hundreds of kilometers separating cities. Table~B.2 makes it clear that any model of the world used for long-distance cartography or geodesy must account for this curvature to have any correspondence with reality. 
 
 \end{document}

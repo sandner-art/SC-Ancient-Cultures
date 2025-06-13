@@ -37,7 +37,7 @@ ax1.scatter(*p1_ancient, color='red', s=50, label='$P_1$ (Alexandria)')
 ax1.scatter(*p2_ancient, color='blue', s=50, label='$P_2$ (Syene)')
 ax1.text(p1_ancient[0]*1.1, p1_ancient[1], p1_ancient[2]*1.1, "$P_1$")
 ax1.text(p2_ancient[0]*1.1, p2_ancient[1], p2_ancient[2]*1.1, "$P_2$")
-ax1.text(0, -1.5, 0, "Constraints:\n• Same Meridian\n• Local Noon Measurement\n• Solstice Day", ha='center')
+ax1.text(0, -1.5, -1, "Constraints:\n• Same Meridian\n• Local Noon Measurement\n• Solstice Day", ha='center')
 
 # --- SUBPLOT 2: Modern Method ---
 draw_sphere(ax2, "Modern Generalized Method")
@@ -59,7 +59,7 @@ v4 = np.cross(v3, v1)
 t = np.linspace(0, np.arccos(np.dot(v1, v2)), 100)
 arc = np.array([v1*np.cos(ti) + v4*np.sin(ti) for ti in t])
 ax2.plot(arc[:,0], arc[:,1], arc[:,2], 'r-', linewidth=2, label='Great-Circle Path')
-ax2.text(0, -1.5, 0, "Generalizations:\n• Arbitrary Points\n• Universal Time (UTC)\n• Any Day of Year", ha='center')
+ax2.text(0, -1.5, -1, "Generalizations:\n• Arbitrary Points\n• Universal Time (UTC)\n• Any Day of Year", ha='center')
 
 
 # --- Final Touches ---
