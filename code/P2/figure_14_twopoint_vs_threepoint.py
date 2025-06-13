@@ -34,7 +34,7 @@ p = np.poly1d(z)
 ax1.plot(phi_range, p(phi_range), color='#CC3311', ls='--', lw=2, label='Flat Model Fit')
 
 ax1.text(40, 1.5, "With only two points,\nboth models are equally valid.", ha='center',
-         bbox=dict(boxstyle="round,pad=0.3", fc="ivory", ec="gray", lw=1))
+         bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="gray", lw=1))
 ax1.legend()
 ax1.set_xlabel('Latitude $\\phi$ (degrees)')
 ax1.set_ylabel('Shadow Length / Gnomon Height ($s/h$)')
@@ -52,7 +52,7 @@ ax2.plot(phi_range, p(phi_range), color='#CC3311', ls='--', lw=2, label='Flat Mo
 # Annotate the failure of the flat model
 ax2.annotate('Third point is missed\nby the linear model',
              xy=(true_phi[2], true_s[2]),
-             xytext=(45, 1.0),
+             xytext=(45, 0.45),
              arrowprops=dict(facecolor='red', shrink=0.05, width=1, headwidth=6, connectionstyle="arc3,rad=0.3"),
              ha='center', va='center', fontsize=12, bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="red", lw=1))
 ax2.legend()

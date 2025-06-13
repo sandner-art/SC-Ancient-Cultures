@@ -6,7 +6,7 @@
 **Last Updated**: 2025-06-11
 
 ## Publication Links
-**Preprint**:   
+**Preprint**: https://doi.org/10.5281/zenodo.15655126  
 **Published**: [DOI link when published]
 
 ## Current Phase

@@ -55,7 +55,7 @@ The elegance of Eratosthenes' experiment lies in its profound simplicity and its
 
 First, Eratosthenes, as a master geographer, knew from records and accounts that the city of Syene (modern Aswan) was located on or very near the Tropic of Cancer. This geographical fact meant that at local noon on the day of the summer solstice, the Sun would be directly at the zenith. At this specific moment, vertical objects like an obelisk—or, as Cleomedes anecdotally described, the bottom of a deep well—would be fully illuminated and cast no shadow. This established a \textbf{perfect, zero-angle baseline} for the experiment. Therefore, Eratosthenes did not even need to be in Syene or coordinate with an observer there; he could rely on this well-documented fact.
 
-Second, he knew the approximate overland distance ($d$) between Syene and his own city of Alexandria, which he took to be 5,000 stadia based on the surveys of bematists.
+Second, he knew or calculated the approximate overland distance ($d$) between Syene and his own city of Alexandria, which he took to be 5,000 stadia based on the surveys of \textit{bematists}.
 
 Third, his theoretical model rested on two foundational assumptions: (1) that the Earth is a sphere, and (2) that the Sun is so distant that its rays arrive as basically parallel lines across the globe.
 
@@ -144,17 +144,34 @@ To appreciate the genius of Eratosthenes' experiment, one must reconstruct it no
 A common misconception is that the experiment required a mechanism for precise, simultaneous timekeeping across 800 kilometers. In reality, the experiment required \textbf{geometric synchronization}, not temporal synchronization. The goal was to measure the sun's zenith angle ($\theta$) at both locations at the same geometric instant: the moment the sun crossed the local meridian. This moment, local solar noon, was determined using the gnomon itself.
 
 \subsubsection{Clockless Noon-Finding Techniques}
-Ancient observers had two robust methods for identifying local noon without a clock:
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/figure_meridian_comparison_with_axis.png}
+    \caption{
+        Two ancient methods for determining local noon and the North-South meridian without a clock. 
+        \textbf{(a)} The 'Shortest Shadow' method identifies the meridian by finding the minimum length of the gnomon's shadow, which occurs at local noon. 
+        \textbf{(b)} The more precise 'Method of Equal Altitudes' uses a reference circle to find two points of equal shadow length in the morning and afternoon; the angle bisector of these points provides a more accurate determination of the meridian.
+    }
+    \label{fig:meridian_methods}
+\end{figure}
+
+Ancient observers had robust methods (Figure~\ref{fig:meridian_methods})for identifying local noon without a clock:
 \begin{enumerate}
-    \item  \textbf{The "Shortest Shadow" Method:} An observer would track the tip of the gnomon's shadow in the hours surrounding midday, marking its path. The point on this curve closest to the gnomon's base marks the shortest shadow, indicating the moment of local noon. The line connecting the gnomon base to this point defines the North-South meridian. While effective, the slow change in shadow length near noon limits its precision to within a few minutes \cite{Goldstein1983}.
-    \item  \textbf{The "Method of Equal Altitudes":} A more precise technique involves drawing a circle on a level surface centered at the gnomon's base. The observer marks the two points where the shadow tip crosses this circle, once in the morning and once in the afternoon. The angle bisector of these two points yields a more accurate meridian line, and the temporal midpoint between the two crossings defines local noon with greater precision \cite{Neugebauer1975}.
+    \item  \textbf{The "Shortest Shadow" Method:} An observer would track the tip of the gnomon's shadow in the hours surrounding midday, marking its path. The point on this curve closest to the gnomon's base marks the shortest shadow, indicating the moment of local noon. The line connecting the gnomon base to this point defines the North-South meridian. While effective, the slow change in shadow length near noon limits its precision to within a few minutes.
+    \item  \textbf{The "Method of Equal Altitudes":} A more precise technique involves drawing a circle on a level surface centered at the gnomon's base. The observer marks the two points where the shadow tip crosses this circle, once in the morning and once in the afternoon. The angle bisector of these two points yields a more accurate meridian line, and the temporal midpoint between the two crossings defines local noon with greater precision \cite{Neugebauer1975, Goldstein1983}.
 \end{enumerate}
 
-By using such a method, observers in both Alexandria and Syene could independently ensure their measurements corresponded to the same solar alignment, making absolute time irrelevant.
+By using such a method, observers in Alexandria could learn the correct moment of local noon. If any two places (whether one has the solstice advantage or not) were to be measured, this would ensure their measurements corresponded to the same solar alignment, making absolute time irrelevant. This provides the necessary \textbf{geometric synchronization} for the experiment, rendering simultaneous timekeeping devices unnecessary.
 
 \subsection{The Critical Variable: Deconstructing the Distance \texorpdfstring{$d$}{d}}
 
-The terrestrial distance ($d$) between Alexandria and Syene is the most significant variable and the largest source of historical uncertainty. Eratosthenes used a value of 5,000 stadia, a figure likely sourced from official records compiled by \textit{bematists}, professional surveyors trained to measure distance by counting their steps. This figure, however, is subject to two distinct layers of uncertainty.
+The terrestrial distance ($d$) between Alexandria and Syene is the most significant variable and the largest source of historical uncertainty. Eratosthenes used a value of 5,000 stadia, a figure whose origin is central to understanding his methodology. The common assumption is that this value was sourced directly from official records compiled by \textit{bematists}, professional surveyors trained to measure distance by counting their steps.
+
+Alternatively, we may strongly hypothesize that the number of 5,000 was the actual rounded result of Eratosthenes' own preliminary calculation. In this view, he would have started with a different official distance—likely a larger, non-rounded figure reflecting the winding travel path (e.g., over 5,300 Attic stadia to match the ~925 km Nile route)—and then applied his own corrections. As a geographer, he would have used maps to account for terrain effects, detours, and the geometric projection of the crooked road onto a true North-South meridian. The resulting "true" geometric distance, after this "data reduction", would have been a value he finally rounded to a convenient 5,000 stadia for use in his circumference calculation.
+
+This interpretation reframes the 5,000 stadia figure not as raw data, but as Eratosthenes' own carefully considered scientific estimate for the correct geometric input. Regardless of its precise origin—whether as a direct official figure or as Eratosthenes' own corrected estimate—this value is still subject to these distinct layers of uncertainty that we must analyze:
+
 
 \subsubsection{Layer 1: The Ambiguity of the \textit{Stadion}}
 The term "stadion" did not represent a single, universally standardized unit. Its length varied by region and time. Resolving which stadion Eratosthenes used is central to interpreting his result.
@@ -178,7 +195,7 @@ The term "stadion" did not represent a single, universally standardized unit. It
 \end{table}
 
 \subsubsection{Layer 2: The Imprecision of the Measurement}
-Beyond the unit itself, the number "5,000" is suspiciously round, suggesting it was an official, accepted approximation rather than a precise survey result. The journey, likely following the winding path of the Nile River, was over 900 km long. Even for trained bematists, an error margin of 5--10\% due to terrain and human factors is a reasonable historical assumption \cite{Engels1985}.
+As we noted, beyond the unit itself, the number "5,000" is suspiciously round, suggesting it was an accepted approximation or calculation rather than a precise survey result. The journey, likely following the path of the Nile River, was over 900 km long. Even for trained bematists, a further error margin of 5--10\% due to terrain and human factors is a reasonable historical assumption \cite{Engels1985}.
 
 \subsection{Reconciling Ancient Data with Modern Measurements}
 
@@ -258,6 +275,15 @@ In summary, Eratosthenes' measurement was the critical linchpin that connected t
 
 While Eratosthenes’ method was revolutionary, its reliance on specific simplifying assumptions (meridian alignment, solstice date) limited its general applicability. A modern reconstruction of the experiment can remove these constraints through the application of precise instrumentation and spherical trigonometry, transforming it into a robust and globally applicable geodetic tool. This section outlines a high-precision protocol for a modern experiment and quantifies the corrections for factors negligible in antiquity but relevant today.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/figure_7_ancient_vs_modern.png}
+    \caption{
+        The conceptual evolution of Eratosthenes' method. The ancient experiment (left) was constrained to two specific points ($P_1, P_2$) believed to lie on the same meridian, with measurements taken at local noon on the solstice. The modern generalized method (right) is applicable to any two points on the globe, using the great-circle path and synchronized Universal Time (UTC) measurements, allowing for precise calculations on any day of the year.
+    }
+    \label{fig:ancient_vs_modern}
+\end{figure}
+
 \subsection{A Generalized Framework for Global Measurement}
 
 The core of the modern method is to generalize the experiment for any two points on Earth ($P_1$ and $P_2$), measured on any given day. This requires a departure from local noon and an introduction of universal time.
@@ -287,6 +313,28 @@ or obtained from astronomical almanacs for higher precision.
 
 \subsubsection{Synchronized Measurement}
 Since the two points are not on the same meridian, their local noons differ. It is therefore essential that the measurement of the sun's shadow be taken at both locations at the \textbf{same instant of universal time} (e.g., 12:00 UTC). This ensures that the measured shadow angles correspond to a single, fixed position of the sun relative to the Earth, making the subsequent geometric calculation valid.
+
+\begin{table}[htbp]
+\centering
+\caption{Comparison of Ancient vs. Modern Methodological Components}
+\label{tab:ancient_vs_modern}
+\small
+\begin{tabular}{@{}lp{0.25\linewidth}p{0.25\linewidth}p{0.35\linewidth}@{}}
+\toprule
+\textbf{Component} & \textbf{Ancient Method} & \textbf{Modern Method} & \textbf{Rationale for Enhancement} \\
+\midrule
+\textbf{Synchronization} & Local Noon (Geometric) & Universal Time (UTC) & Enables measurement between non-aligned points. \\
+\addlinespace
+\textbf{Distance ($d$)} & Bematist survey, estimated & GPS and Haversine Formula & Eliminates the largest source of error and uncertainty. \\
+\addlinespace
+\textbf{Angle ($\Delta\theta$)} & Gnomon, solstice observation & Theodolite/App, declination formula & Allows measurement on any day and increases precision. \\
+\addlinespace
+\textbf{Altitude ($h$)} & Ignored (negligible effect) & Mathematically corrected & Required for high-precision geodetic results. \\
+\addlinespace
+\textbf{Earth Model} & Perfect Sphere & Oblate Spheroid (e.g., WGS84) & Increases accuracy by using a more realistic model of Earth's shape. \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \subsection{A High-Precision Protocol}
 
@@ -323,27 +371,7 @@ The Earth is not a perfect sphere but an oblate spheroid, with an equatorial rad
 \end{enumerate}
 A full geodetic treatment would use a more complex model like the WGS84 reference ellipsoid instead of a simple sphere. However, for most applications outside of professional geodesy, using the mean radius in the haversine formula provides a result well within 1\% of the true value, which is sufficient for demonstrating the method's power and precision \cite{Torge2012}.
 
-\begin{table}[htbp]
-\centering
-\caption{Comparison of Ancient vs. Modern Methodological Components}
-\label{tab:ancient_vs_modern}
-\small
-\begin{tabular}{@{}lp{0.25\linewidth}p{0.25\linewidth}p{0.35\linewidth}@{}}
-\toprule
-\textbf{Component} & \textbf{Ancient Method} & \textbf{Modern Method} & \textbf{Rationale for Enhancement} \\
-\midrule
-\textbf{Synchronization} & Local Noon (Geometric) & Universal Time (UTC) & Enables measurement between non-aligned points. \\
-\addlinespace
-\textbf{Distance ($d$)} & Bematist survey, estimated & GPS and Haversine Formula & Eliminates the largest source of error and uncertainty. \\
-\addlinespace
-\textbf{Angle ($\Delta\theta$)} & Gnomon, solstice observation & Theodolite/App, declination formula & Allows measurement on any day and increases precision. \\
-\addlinespace
-\textbf{Altitude ($h$)} & Ignored (negligible effect) & Mathematically corrected & Required for high-precision geodetic results. \\
-\addlinespace
-\textbf{Earth Model} & Perfect Sphere & Oblate Spheroid (e.g., WGS84) & Increases accuracy by using a more realistic model of Earth's shape. \\
-\bottomrule
-\end{tabular}
-\end{table}
+
 
 \section{Theoretical Analysis: The Experiment on Other Worlds}
 
@@ -380,18 +408,31 @@ For a flat-Earth model to yield the same shadow measurements as a spherical one,
 \end{equation}
 Where $d$ is the linear distance from the subsolar point, itself a function of latitude ($d \approx (\phi/360) \cdot C$). This leads to a physically implausible requirement: the sun's altitude would have to systematically \textbf{decrease} as an observer moves away from the equator to higher latitudes. This ad-hoc model would not be consistent across the entire flat surface. A single, physical sun cannot have multiple altitudes simultaneously. The model can be tuned to provide a \textit{local fit} for any two points, but it fails as a \textit{global model}. This internal inconsistency demonstrates that the flat-Earth model must be rejected on the grounds of falsifiability when multiple data points are introduced \cite{Popper1959}.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/figure_14_twopoint_vs_threepoint.png}
+    \caption{
+        Visualizing the principle of falsifiability in distinguishing planetary models. 
+        \textbf{Left:} With only two measurement points, both a non-linear spherical model ($s \propto \tan(\phi)$) and a linear flat-plane model can be fit to the data, making the models indistinguishable. 
+        \textbf{Right:} The introduction of a third measurement point breaks the ambiguity. The new point aligns with the curve predicted by the spherical model—a non-linear tangent curve representing the trigonometric relationship between latitude and shadow length—but is decisively missed by the linear model, which is thereby falsified. The accelerating divergence of the curves at higher latitudes ($\phi$) makes the distinction between models increasingly apparent.
+    }
+    \label{fig:falsifiability}
+\end{figure}
+
 \subsubsection{The Ambiguity of a Two-Point Measurement and the Power of a Third}
-For the sake of scientific accuracy, it must be noted that an Eratosthenes experiment performed between \textbf{only two points does not, by itself, definitively prove a spherical shape}. With only two data points, both models are internally valid explanations. The power to falsify one of these models emerges with the introduction of a \textbf{third measurement point}.
+For the sake of scientific accuracy, it must be noted that an Eratosthenes experiment performed between \textbf{only two points does not, by itself, definitively prove a spherical shape}. With only two data points, both models are internally valid explanations (Figure~\ref{fig:falsifiability}). The power to falsify one of these models emerges with the introduction of a \textbf{third measurement point}.
 \begin{itemize}
     \item In the \textbf{spherical model}, the third measurement will fall along the same $\tan(\phi)$ curve predicted by the first two points. Pairwise calculations between points (1,3) and (2,3) will yield the same circumference $C$ as the (1,2) calculation, demonstrating global consistency.
     \item In the \textbf{flat model}, the third measurement will \textbf{not} lie on the linear $d/H$ curve defined by the first two points. Calculating the solar altitude $H$ using a new pair of points will yield a different value, proving the model is inconsistent and therefore incorrect.
 \end{itemize}
 Therefore, while a two-point experiment can \textit{measure} a property (like circumference or solar altitude) \textit{within a given model}, it is a \textbf{multi-point experiment ($n \ge 3$) that can scientifically distinguish between competing models of planetary geometry}.
 
+
+
 \subsubsection{Hypothetical Geometries}
 \begin{enumerate}
     \item  \textbf{Hyperbolic Planet:} A hyperbolic geometry is characterized by negative curvature (a "saddle" shape). On such a surface, parallel lines diverge. The effect on shadow lengths would be an even more extreme divergence than on a sphere. The trigonometric relationship would be replaced by a hyperbolic function, likely causing the shadow length to grow super-linearly, even faster than $\tan(\phi)$ \cite{Richards1997}.
-    \item  \textbf{Inverted Spheroid (Concave World):} In this speculative model, observers live on the inner surface of a sphere. Light propagation becomes complex, but assuming straight-line rays from a central sun, observers at higher "latitudes" would be angled \textit{towards} the sun's rays. This would cause shadows to behave erratically, potentially shortening at higher latitudes, a direct contradiction to all real-world observation.
+    \item  \textbf{Inverted Spheroid (Concave World):} In this speculative model, observers live on the inner surface of a sphere or hemisphere. Light propagation becomes complex, but assuming straight-line rays from a central sun, observers at higher "latitudes" would be angled \textit{towards} the sun's rays. This would cause shadows to behave erratically, potentially shortening at higher latitudes, a direct contradiction to all real-world observation.
 \end{enumerate}
 
 \begin{table}[htbp]
@@ -416,8 +457,55 @@ This comparison demonstrates that a simple multi-point Eratosthenes-style experi
 
 \subsection{Impact of Solar System Configuration}
 
-\subsubsection{Close Primary Star: Breakdown of the Parallel-Ray Assumption}
-The assumption that the star's rays are parallel is an excellent approximation for the Earth-Sun system, where the sun's distance ($\sim$150 million km) is over 10,000 times the Earth's diameter. If a planet were orbiting much closer to its star, this assumption would fail. The incoming rays would have a noticeable divergence, a phenomenon known as \textbf{solar parallax} \cite{Anderson1999}. The experiment, in this case, could be modified to solve for two unknowns simultaneously: the planet's radius $R$ and its distance from its star $D$.
+\subsubsection{Close Primary Star: Breakdown of the Parallel-Ray Assumption and a Generalized Solution}
+\label{sec:parallax}
+
+The assumption that the star’s rays are parallel is an excellent approximation for the Earth-Sun system, where the sun’s distance ($D \approx 150$ million km) is over 10,000 times the Earth’s diameter. If a planet were orbiting much closer to its star, this assumption would fail. The incoming rays would have a noticeable divergence, a phenomenon known as \textbf{solar parallax} \cite{Smart1977, Urban2013}. This invalidates the core geometric shortcut of the ancient experiment ($\theta = \Delta\theta$), but it does not invalidate the method. Instead, the experiment can be generalized to solve for two unknowns simultaneously: the planet’s radius $R$ and its distance from its star $D$.
+
+\paragraph{The New Angular Relationship}
+
+In the parallax case, we must analyze the geometry of the triangle formed by the planet's center (C), the star's center (S), and the second observation point ($P_2$, Alexandria). The zenith angle measured at Alexandria ($\theta_A$) is no longer equal to the planet-centric angle ($\Delta\theta$). Instead, it is the sum of this central angle and the parallax angle ($\alpha$), which is the angle subtended by the planet's radius at the star's distance \cite{Woolf1959}.
+
+This new relationship can be found by considering the sum of angles in the triangle CSP$_2$:
+\begin{equation}
+\theta_A = \Delta\theta + \alpha
+\label{eq:parallax_angle}
+\end{equation}
+This equation intuitively shows that the measured zenith angle is now composed of two parts: the effect of planetary curvature ($\Delta\theta$) and the effect of the star's finite distance ($\alpha$).
+
+\paragraph{Deriving a Solvable System}
+
+While we have a new relationship, we also have a new unknown, $\alpha$. To solve the system, we can apply the Law of Sines to the same triangle CSP$_2$:
+\[
+\frac{\sin(\alpha)}{R} = \frac{\sin(\pi - \theta_A)}{D}
+\]
+Since $\sin(\pi - x) = \sin(x)$, this simplifies to a relationship between the parallax angle and the ratio of the planet's radius to its distance from the star:
+\begin{equation}
+\sin(\alpha) = \frac{R}{D} \sin(\theta_A)
+\label{eq:parallax_sines}
+\end{equation}
+We can now combine these two equations. First, substitute the terrestrial distance $d$ for the central angle, where $\Delta\theta = d/R$. Equation \ref{eq:parallax_angle} becomes $\alpha = \theta_A - d/R$. Substituting this into Equation \ref{eq:parallax_sines} gives:
+\[
+\sin\left(\theta_A - \frac{d}{R}\right) = \frac{R}{D} \sin(\theta_A)
+\]
+This single equation still contains two unknowns, $R$ and $D$. This reveals a powerful conclusion: \textbf{a two-point experiment on a world with significant parallax cannot solve for $R$ and $D$ independently.} However, it can solve for their ratio:
+\begin{equation}
+\frac{R}{D} = \frac{\sin(\theta_A - d/R)}{\sin(\theta_A)}
+\label{eq:rd_ratio}
+\end{equation}
+This result itself is a significant geodetic finding for a hypothetical planetary observer.
+
+\paragraph{The Power of a Third Measurement}
+To solve for $R$ and $D$ independently, a third measurement is required, analogous to the method for falsifying the flat-plane model. An observer would measure the zenith angle $\theta_C$ at a third location $P_3$, at a distance $d_C$ from the sub-solar point $P_1$. This generates a second, independent equation for the same R/D ratio:
+\begin{equation}
+\frac{R}{D} = \frac{\sin(\theta_C - d_C/R)}{\sin(\theta_C)}
+\label{eq:rd_ratio2}
+\end{equation}
+By setting the two expressions for $R/D$ equal, we obtain a single, complex equation with only one unknown, $R$:
+\[
+\frac{\sin(\theta_A - d_A/R)}{\sin(\theta_A)} = \frac{\sin(\theta_C - d_C/R)}{\sin(\theta_C)}
+\]
+While this transcendental equation is difficult to solve analytically, it can be solved with numerical methods. Once a unique value for the planetary radius $R$ is found, it can be substituted back into either Equation~\ref{eq:rd_ratio} or Equation~\ref{eq:rd_ratio2} to find the absolute distance to the star, $D$. Thus, a three-point Eratosthenes-style experiment becomes a powerful tool capable of measuring the fundamental parameters of an entire planetary system.
 
 \subsubsection{Binary Star Systems}
 An experiment on a planet illuminated by two stars would present a unique observational challenge: the presence of two overlapping shadows (\textit{penumbrae}) for any given object. The method could be adapted:
@@ -435,7 +523,7 @@ Our reconstruction of the ancient methodology revealed that the experiment's suc
 
 Contrasting this ancient practice with a modern framework highlighted the experiment's adaptability. By incorporating universal time, spherical trigonometry, and corrections for factors like solar declination and observer altitude, the method is transformed into a precise and globally applicable geodetic tool. Finally, our theoretical analysis reframed the experiment as a universal instrument for comparative planetology. We have demonstrated that the shadow curves produced on planets of different geometries—spherical, flat, or hyperbolic—are unique and distinguishable.
 
-Ultimately, this investigation reaffirms the enduring relevance of Eratosthenes' work. It is not an obsolete historical anecdote, but a living scientific principle. It serves as a powerful educational tool, a case study in scientific reasoning and error analysis, and a foundational concept for understanding how we measure and map any world. The experiment's true legacy is its elegant demonstration that with a simple stick, a shadow, and a mastery of reason, it is possible to measure the world.
+Ultimately, this investigation reaffirms the enduring relevance of Eratosthenes' work. It is not an obsolete historical anecdote, but a living scientific principle. It serves as a powerful educational tool, a case study in scientific reasoning and error analysis, and a foundational concept for understanding how we measure and map any world. The experiment's true legacy is its demonstration that with a simple stick, a shadow, and a mastery of reason, it is possible to measure the world.
 
 % --- BIBLIOGRAPHY ---
 \bibliographystyle{plainnat}
@@ -542,11 +630,11 @@ To quantify the effect of curvature, we can calculate the "curvature drop" ($h_{
 \[
 h_{\text{drop}} \approx \frac{d^2}{2R}
 \]
-This approximation is derived from the Pythagorean theorem and is highly accurate for distances up to several thousand kilometers. For all calculations in Table B.2, we use the Earth's mean radius, $R \approx 6,371$ km.
+This approximation is derived from the Pythagorean theorem and is highly accurate for distances up to several thousand kilometers. For all calculations in Table~\ref{tab:curvature_drop}, we use the Earth's mean radius, $R \approx 6,371$ km.
 
 \subsection*{Tables of Conversion and Curvature}
 
-To contextualize the calculations, Table~B.1 provides the key conversion factors for the Hellenistic stadia discussed in this paper. Table~B.2 then applies these conversions and the curvature formula to a range of distances, from a short 10 km to well beyond the scale of Eratosthenes' experiment, showing how the deviation from a flat plane grows quadratically with distance.
+To contextualize the calculations, Table~\ref{tab:stadia_conversion} provides the key conversion factors for the Hellenistic stadia discussed in this paper. Table~\ref{tab:curvature_drop} then applies these conversions and the curvature formula to a range of distances, from a short 10 km to well beyond the scale of Eratosthenes' experiment, showing how the deviation from a flat plane grows quadratically with distance.
 
 \begin{table}[htbp]
 \centering
@@ -562,6 +650,9 @@ To contextualize the calculations, Table~B.1 provides the key conversion factors
 \bottomrule
 \end{tabular}
 \end{table}
+
+
+\newpage
 
 \begin{table}[htbp]
 \centering
